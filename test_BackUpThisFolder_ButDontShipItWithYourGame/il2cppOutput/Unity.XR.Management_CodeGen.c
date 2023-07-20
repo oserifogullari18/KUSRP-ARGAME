@@ -113,43 +113,45 @@ extern void XRManagerSettings_TryAddLoader_m1CF7DEB07D6E67F3D788B41FE0404DAE19F3
 extern void XRManagerSettings_TryRemoveLoader_m29479875EF3C4773D5D74661131A06C2E8736BB0 (void);
 // 0x00000037 System.Boolean UnityEngine.XR.Management.XRManagerSettings::TrySetLoaders(System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader>)
 extern void XRManagerSettings_TrySetLoaders_mD2EAE278D90F867E6EA02A75D60F09FD1EE13C30 (void);
-// 0x00000038 System.Boolean UnityEngine.XR.Management.XRManagerSettings::CheckGraphicsAPICompatibility(UnityEngine.XR.Management.XRLoader)
+// 0x00000038 System.Void UnityEngine.XR.Management.XRManagerSettings::Awake()
+extern void XRManagerSettings_Awake_mAD790D96C19843B09AA0D7B8F6819757E0D62C89 (void);
+// 0x00000039 System.Boolean UnityEngine.XR.Management.XRManagerSettings::CheckGraphicsAPICompatibility(UnityEngine.XR.Management.XRLoader)
 extern void XRManagerSettings_CheckGraphicsAPICompatibility_m63AE4A622C2B137618B747F25A7591CBD0B9496B (void);
-// 0x00000039 System.Void UnityEngine.XR.Management.XRManagerSettings::StartSubsystems()
+// 0x0000003A System.Void UnityEngine.XR.Management.XRManagerSettings::StartSubsystems()
 extern void XRManagerSettings_StartSubsystems_m94D89460222C083D6E25881C6825E44FEC98DDCC (void);
-// 0x0000003A System.Void UnityEngine.XR.Management.XRManagerSettings::StopSubsystems()
+// 0x0000003B System.Void UnityEngine.XR.Management.XRManagerSettings::StopSubsystems()
 extern void XRManagerSettings_StopSubsystems_mB59730C9283178A5E9E6D6E9127FE3DB25CC82D4 (void);
-// 0x0000003B System.Void UnityEngine.XR.Management.XRManagerSettings::DeinitializeLoader()
+// 0x0000003C System.Void UnityEngine.XR.Management.XRManagerSettings::DeinitializeLoader()
 extern void XRManagerSettings_DeinitializeLoader_m81038A43AD1AD84045B90396D1E2E4F2D8029BAB (void);
-// 0x0000003C System.Void UnityEngine.XR.Management.XRManagerSettings::Start()
+// 0x0000003D System.Void UnityEngine.XR.Management.XRManagerSettings::Start()
 extern void XRManagerSettings_Start_mBF2ADCCC6377C8A7DDA7C462313DAD00DC00382C (void);
-// 0x0000003D System.Void UnityEngine.XR.Management.XRManagerSettings::OnDisable()
+// 0x0000003E System.Void UnityEngine.XR.Management.XRManagerSettings::OnDisable()
 extern void XRManagerSettings_OnDisable_m31F1208BDDBDC01D75AAC4063C0F8765269CA408 (void);
-// 0x0000003E System.Void UnityEngine.XR.Management.XRManagerSettings::OnDestroy()
+// 0x0000003F System.Void UnityEngine.XR.Management.XRManagerSettings::OnDestroy()
 extern void XRManagerSettings_OnDestroy_m88AE1F5A6B819CF07D249F6A6D3A7809C4DBF9E2 (void);
-// 0x0000003F System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> UnityEngine.XR.Management.XRManagerSettings::get_currentLoaders()
+// 0x00000040 System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader> UnityEngine.XR.Management.XRManagerSettings::get_currentLoaders()
 extern void XRManagerSettings_get_currentLoaders_m3A4FF4CA5168E58C4DAB89B33972C1EE83FF2237 (void);
-// 0x00000040 System.Void UnityEngine.XR.Management.XRManagerSettings::set_currentLoaders(System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader>)
+// 0x00000041 System.Void UnityEngine.XR.Management.XRManagerSettings::set_currentLoaders(System.Collections.Generic.List`1<UnityEngine.XR.Management.XRLoader>)
 extern void XRManagerSettings_set_currentLoaders_mBF7D7DE30A657C0B8A145FBE84104797D668454A (void);
-// 0x00000041 System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> UnityEngine.XR.Management.XRManagerSettings::get_registeredLoaders()
+// 0x00000042 System.Collections.Generic.HashSet`1<UnityEngine.XR.Management.XRLoader> UnityEngine.XR.Management.XRManagerSettings::get_registeredLoaders()
 extern void XRManagerSettings_get_registeredLoaders_m9FDA9ABA6EE526EC99C892488869777BF13E4D1B (void);
-// 0x00000042 System.Void UnityEngine.XR.Management.XRManagerSettings::.ctor()
+// 0x00000043 System.Void UnityEngine.XR.Management.XRManagerSettings::.ctor()
 extern void XRManagerSettings__ctor_m516BC0C114BD8652EAE41D77BF961C5521520317 (void);
-// 0x00000043 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::.ctor(System.Int32)
+// 0x00000044 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::.ctor(System.Int32)
 extern void U3CInitializeLoaderU3Ed__24__ctor_m55EFC72939B5E8ABAF9E70DD0878A80B0280C97A (void);
-// 0x00000044 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.IDisposable.Dispose()
+// 0x00000045 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.IDisposable.Dispose()
 extern void U3CInitializeLoaderU3Ed__24_System_IDisposable_Dispose_mB850632340F899B06CCC956A3557DECF8BCC7AE8 (void);
-// 0x00000045 System.Boolean UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::MoveNext()
+// 0x00000046 System.Boolean UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::MoveNext()
 extern void U3CInitializeLoaderU3Ed__24_MoveNext_m0D3BCBEFAE33727F17874481BF551C2741132003 (void);
-// 0x00000046 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::<>m__Finally1()
+// 0x00000047 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::<>m__Finally1()
 extern void U3CInitializeLoaderU3Ed__24_U3CU3Em__Finally1_m6CCA9E68B1BF2344768A755069F9B9CD799E277C (void);
-// 0x00000047 System.Object UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000048 System.Object UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CInitializeLoaderU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4F6952CC23A00893DC2B18A638480696CEE3370C (void);
-// 0x00000048 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.IEnumerator.Reset()
+// 0x00000049 System.Void UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.IEnumerator.Reset()
 extern void U3CInitializeLoaderU3Ed__24_System_Collections_IEnumerator_Reset_m803D94C93BE413DFBA21C0FEFABA00DA3E3414C4 (void);
-// 0x00000049 System.Object UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.IEnumerator.get_Current()
+// 0x0000004A System.Object UnityEngine.XR.Management.XRManagerSettings/<InitializeLoader>d__24::System.Collections.IEnumerator.get_Current()
 extern void U3CInitializeLoaderU3Ed__24_System_Collections_IEnumerator_get_Current_m92156199FCA3AAD568CA668A7A6CF7FB31B8A23C (void);
-static Il2CppMethodPointer s_methodPointers[73] = 
+static Il2CppMethodPointer s_methodPointers[74] = 
 {
 	XRConfigurationDataAttribute_get_displayName_mE0BD51CF7824CBB1318708EAD9717F604BE14057,
 	XRConfigurationDataAttribute_set_displayName_m3AFFE133640E562156E3D20A81206FE9F62D12BB,
@@ -206,6 +208,7 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	XRManagerSettings_TryAddLoader_m1CF7DEB07D6E67F3D788B41FE0404DAE19F38031,
 	XRManagerSettings_TryRemoveLoader_m29479875EF3C4773D5D74661131A06C2E8736BB0,
 	XRManagerSettings_TrySetLoaders_mD2EAE278D90F867E6EA02A75D60F09FD1EE13C30,
+	XRManagerSettings_Awake_mAD790D96C19843B09AA0D7B8F6819757E0D62C89,
 	XRManagerSettings_CheckGraphicsAPICompatibility_m63AE4A622C2B137618B747F25A7591CBD0B9496B,
 	XRManagerSettings_StartSubsystems_m94D89460222C083D6E25881C6825E44FEC98DDCC,
 	XRManagerSettings_StopSubsystems_mB59730C9283178A5E9E6D6E9127FE3DB25CC82D4,
@@ -225,7 +228,7 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	U3CInitializeLoaderU3Ed__24_System_Collections_IEnumerator_Reset_m803D94C93BE413DFBA21C0FEFABA00DA3E3414C4,
 	U3CInitializeLoaderU3Ed__24_System_Collections_IEnumerator_get_Current_m92156199FCA3AAD568CA668A7A6CF7FB31B8A23C,
 };
-static const int32_t s_InvokerIndices[73] = 
+static const int32_t s_InvokerIndices[74] = 
 {
 	5956,
 	4812,
@@ -282,6 +285,7 @@ static const int32_t s_InvokerIndices[73] =
 	1573,
 	3387,
 	3387,
+	6066,
 	3387,
 	6066,
 	6066,
@@ -367,7 +371,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Management_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_Management_CodeGenModule = 
 {
 	"Unity.XR.Management.dll",
-	73,
+	74,
 	s_methodPointers,
 	0,
 	NULL,
