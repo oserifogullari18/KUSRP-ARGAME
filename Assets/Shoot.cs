@@ -15,7 +15,7 @@ public GameObject arCamera;
 public void Shoott() {
 RaycastHit hit;
 if (Physics.Raycast (arCamera.transform.position, arCamera.transform.forward, out hit)) {
-if (hit.transform.name == "TurtleShellWithBar") {
+//if ((hit.transform.name == "TurtleShellWithBar" )) {
 // Destroy(hit.transform.gameObject);
             Player playerScript =   (Player)hit.transform.gameObject.GetComponent<Player>();
                 if (playerScript != null)
@@ -26,5 +26,5 @@ if (hit.transform.name == "TurtleShellWithBar") {
         }
     }
 }
-}
+//}
 
