@@ -5,31 +5,39 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
+	public Transform cam;
 
-	public Slider slider;
-	public Gradient gradient;
-	public Image fill;
+    public void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health;
 
-	public void SetMaxHealth(int health)
-	{
-		slider.maxValue = health;
-		slider.value = health;
-
-		fill.color = gradient.Evaluate(1f);
-	}
+        fill.color = gradient.Evaluate(1f);
+    }
 
     public void SetHealth(int health)
-	{
-		slider.value = health;
+    {
+        slider.value = health;
 
-		fill.color = gradient.Evaluate(slider.normalizedValue);
-	}
-	public void TakeDamage(int damage){
-		slider.value -= damage;
-		if(slider.value<=0){
-			
-		}
+        fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
 
-	}
+    public void TakeDamage(int damage)
+    {
+        slider.value -= damage;
+        if (slider.value <= 0)
+        {
+            
+        }
+    }
 
+
+    // void LateUpdate()
+    // {
+	// 	transform.LookAt(transform.position + cam.forward);
+    // }
+    //Deniz burayı telefondan dene sonra herekirse silelim
 }
