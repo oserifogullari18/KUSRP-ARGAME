@@ -1147,6 +1147,18 @@ PrefabInstance:
     - target: {fileID: 1158909552, guid: a4f42d2a09111493283231169a9ad278, type: 3}
       propertyPath: cam
       value: 
+      objectReference: {fileID: 243527141}
+    - target: {fileID: 1158909552, guid: a4f42d2a09111493283231169a9ad278, type: 3}
+      propertyPath: gradient.key1.b
+      value: 0.14509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158909552, guid: a4f42d2a09111493283231169a9ad278, type: 3}
+      propertyPath: gradient.key1.g
+      value: 0.14901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158909552, guid: a4f42d2a09111493283231169a9ad278, type: 3}
+      propertyPath: gradient.key1.r
+      value: 0.89019614
       objectReference: {fileID: 0}
     - target: {fileID: 1386116562, guid: a4f42d2a09111493283231169a9ad278, type: 3}
       propertyPath: m_AnchorMax.x
