@@ -35,9 +35,11 @@ public class HealthBar : MonoBehaviour
     }
 
 
-    // void LateUpdate()
-    // {
-	// 	transform.LookAt(transform.position + cam.forward);
-    // }
+     /*void LateUpdate()
+     {
+	 	transform.LookAt(transform.position + cam.forward);
+     }
+     */
     //Deniz burayı telefondan dene sonra herekirse silelim
+    //Saçmalaşıyor uzuyor ve kısalıyor.
 }
