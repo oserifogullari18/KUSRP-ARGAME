@@ -3,24 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour{
-
-/*	public static Scene Manager Instance;
-
-	private void Awake(){
-
-		Instance = this;
-
-	}
-
-	private enum Scene{
-		Scene1,
-		map
-	}
-*/
-	public void ChangeScene(string scene)
+public class SwitchToMap : MonoBehaviour{
+	public void ChangeScene()
 	{
-		SceneManager.LoadScene(scene);
+		SceneManager.LoadScene (sceneBuildIndex:1);
 	}
 
 }
