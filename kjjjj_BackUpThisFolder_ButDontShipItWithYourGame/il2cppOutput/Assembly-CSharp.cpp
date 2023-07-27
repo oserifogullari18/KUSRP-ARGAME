@@ -768,6 +768,8 @@ struct SQLiteConnectionString_tAB6A6F83E42333E01C348CBA36550FDCE1460664;
 struct SQLiteException_t7104409E8ADAC97D5B8DD8998E7C10A0DA4437DE;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// SceneChanger
+struct SceneChanger_tC919AD069A17BDD8C7D94D8DBD5EB709E217DF40;
 // Mapbox.Unity.Utilities.DebugTools.SceneData
 struct SceneData_tEAE64A84E5B16FFC12D324DA406FCE4D64A752F4;
 // Mapbox.Unity.Utilities.DebugTools.ScenesList
@@ -1090,6 +1092,7 @@ IL2CPP_EXTERN_C RuntimeClass* SQLiteCache_t0A268D58623E7EA29BD851362BBB56BE17967
 IL2CPP_EXTERN_C RuntimeClass* SQLiteCommand_tE4EAE2C5540D8A3E978930F43369250F5063E8BF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SQLiteConnection_t7E2BA1E4CC3809FD458BFD2813B706A91189DCC4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SQLiteException_t7104409E8ADAC97D5B8DD8998E7C10A0DA4437DE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Stopwatch_tA188A210449E22C07053A7D3014DD182C7369043_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
@@ -6153,6 +6156,11 @@ struct Runnable_t44C8DD13D8B31C0311E7544FB3B4AD2AE0B52C35  : public MonoBehaviou
 	int32_t ___m_NextRoutineId_5;
 };
 
+// SceneChanger
+struct SceneChanger_tC919AD069A17BDD8C7D94D8DBD5EB709E217DF40  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // SetCameraHeight
 struct SetCameraHeight_tED576C89EE5E0F12BA3F8892368B4A3C5337E9F2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -7895,6 +7903,8 @@ inline Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* GameObject_GetComponent
 {
 	return ((  Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
+// System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF (String_t* ___sceneName0, const RuntimeMethod* method) ;
 // System.Int32 System.Math::Max(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_m830F00B616D7A2130E46E974DFB27E9DA7FE30E5 (int32_t ___val10, int32_t ___val21, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
@@ -13020,6 +13030,40 @@ IL_004c:
 }
 // System.Void Shoot::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shoot__ctor_m9CC0333342223937F83B34DB4109B3101CCB3AA9 (Shoot_t08C24BBE00220196C8CC9C91F8C45B52885C680A* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SceneChanger::ChangeScene(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneChanger_ChangeScene_m547707E2754AB1854764032226E5CF38D2AC79BF (SceneChanger_tC919AD069A17BDD8C7D94D8DBD5EB709E217DF40* __this, String_t* ___scene0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene(scene);
+		String_t* L_0 = ___scene0;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneChanger::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneChanger__ctor_mE9DB2B4102825D23A4B0271C2A6023F02920B4AD (SceneChanger_tC919AD069A17BDD8C7D94D8DBD5EB709E217DF40* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
