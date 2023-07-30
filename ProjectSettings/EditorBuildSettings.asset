@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/map.unity
     guid: a0e14703c3eb5af7aac7bb5803dbb50b
   m_configObjects:

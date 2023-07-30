@@ -1,12 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class SwitchToMap : MonoBehaviour{
-	public void ChangeScene()
-	{
-		SceneManager.LoadScene (sceneBuildIndex:1);
-	}
+public class SwitchToMap : MonoBehaviour
+{
+    public GameObject[] objectsToToggle; // List of game objects you want to enable/disable
 
+    private bool areObjectsEnabled = true;
+
+    public void ToggleGameObjects()
+    {
+        areObjectsEnabled = !areObjectsEnabled;
+
+        foreach (GameObject obj in objectsToToggle)
+        {
+            obj.SetActive(areObjectsEnabled);
+        }
+    }
 }
