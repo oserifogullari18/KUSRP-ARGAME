@@ -38730,15 +38730,6 @@ struct ObjectInspectorModifier_tF695D8E3812D6BA1E8C94119303385EC2C0DD28E  : publ
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____root_10;
 };
 
-// ObjectSwitcher
-struct ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.String ObjectSwitcher::gameTag
-	String_t* ___gameTag_4;
-	// System.String ObjectSwitcher::mapTag
-	String_t* ___mapTag_5;
-};
-
 // Mapbox.Unity.Utilities.OpenUrlOnButtonClick
 struct OpenUrlOnButtonClick_t8E80FF8E4018D370534FB8F768A9088A45344464  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -39310,6 +39301,19 @@ struct SpawnOnMap_tBC59AABE710F31EE5C9C2DFBC51253D45E3601BC  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____markerPrefab_8;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Mapbox.Examples.SpawnOnMap::_spawnedObjects
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ____spawnedObjects_9;
+};
+
+// SwitchToMap
+struct SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject[] SwitchToMap::objectsToToggle
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___objectsToToggle_4;
+	// UnityEngine.GameObject[] SwitchToMap::objectsToToggle2
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___objectsToToggle2_5;
+	// System.Boolean SwitchToMap::areObjectsEnabled
+	bool ___areObjectsEnabled_6;
+	// System.Boolean SwitchToMap::areObjectsEnabled2
+	bool ___areObjectsEnabled2_7;
 };
 
 // TMPro.TMP_ScrollbarEventHandler
@@ -44403,9 +44407,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4412[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4413[1] = 
 {
 	static_cast<int32_t>(offsetof(Shoot_t08C24BBE00220196C8CC9C91F8C45B52885C680A, ___arCamera_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4414[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4414[4] = 
 {
-	static_cast<int32_t>(offsetof(ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF, ___gameTag_4)),static_cast<int32_t>(offsetof(ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF, ___mapTag_5)),};
+	static_cast<int32_t>(offsetof(SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896, ___objectsToToggle_4)),static_cast<int32_t>(offsetof(SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896, ___objectsToToggle2_5)),static_cast<int32_t>(offsetof(SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896, ___areObjectsEnabled_6)),static_cast<int32_t>(offsetof(SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896, ___areObjectsEnabled2_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4415[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec_t1B59A28A2FFB4268986D50E264F7D155486AA3D4_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t1B59A28A2FFB4268986D50E264F7D155486AA3D4_StaticFields, ___U3CU3E9__13_0_1)),};

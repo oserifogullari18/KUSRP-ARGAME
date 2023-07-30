@@ -203,12 +203,12 @@ extern void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (void);
 extern void Shoot_Shoott_mDAF31060843E5D0633F9386B8541F8B64C189A12 (void);
 // 0x00000066 System.Void Shoot::.ctor()
 extern void Shoot__ctor_m9CC0333342223937F83B34DB4109B3101CCB3AA9 (void);
-// 0x00000067 System.Void ObjectSwitcher::SwitchToGameObjects()
-extern void ObjectSwitcher_SwitchToGameObjects_m7E564CF94CA90046BD53E37FBBF497AC78989A32 (void);
-// 0x00000068 System.Void ObjectSwitcher::SwitchToMapObjects()
-extern void ObjectSwitcher_SwitchToMapObjects_mD2A8ECD22ACAE1874B74AE81D6CB1C5AACDD14DB (void);
-// 0x00000069 System.Void ObjectSwitcher::.ctor()
-extern void ObjectSwitcher__ctor_m2AD45410FC79842EE85434A9C4BA1AEA1CCB9AD5 (void);
+// 0x00000067 System.Void SwitchToMap::ToggleGameObjects()
+extern void SwitchToMap_ToggleGameObjects_m4F28F68B628B0AAFD26BA22BAB4CF7DD84B001A8 (void);
+// 0x00000068 System.Void SwitchToMap::ToggleGameObjects2()
+extern void SwitchToMap_ToggleGameObjects2_mBD9680AB58CEE0E491E04C374E5A50C6D70E609F (void);
+// 0x00000069 System.Void SwitchToMap::.ctor()
+extern void SwitchToMap__ctor_m1122433F362B487AE2D9A752D8C410C26A28925B (void);
 // 0x0000006A System.Collections.Generic.List`1<System.Int32> Assets.Mapbox.Unity.MeshGeneration.Modifiers.MeshModifiers.EarcutLibrary::Earcut(System.Collections.Generic.List`1<System.Single>,System.Collections.Generic.List`1<System.Int32>,System.Int32)
 extern void EarcutLibrary_Earcut_mF8F52D10F8841E41D70DB59E806A883A80E5784D (void);
 // 0x0000006B System.Void Assets.Mapbox.Unity.MeshGeneration.Modifiers.MeshModifiers.EarcutLibrary::earcutLinked(Assets.Mapbox.Unity.MeshGeneration.Modifiers.MeshModifiers.Node,System.Collections.Generic.List`1<System.Int32>,System.Int32,System.Single,System.Single,System.Single,System.Int32)
@@ -8853,9 +8853,9 @@ static Il2CppMethodPointer s_methodPointers[4660] =
 	Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D,
 	Shoot_Shoott_mDAF31060843E5D0633F9386B8541F8B64C189A12,
 	Shoot__ctor_m9CC0333342223937F83B34DB4109B3101CCB3AA9,
-	ObjectSwitcher_SwitchToGameObjects_m7E564CF94CA90046BD53E37FBBF497AC78989A32,
-	ObjectSwitcher_SwitchToMapObjects_mD2A8ECD22ACAE1874B74AE81D6CB1C5AACDD14DB,
-	ObjectSwitcher__ctor_m2AD45410FC79842EE85434A9C4BA1AEA1CCB9AD5,
+	SwitchToMap_ToggleGameObjects_m4F28F68B628B0AAFD26BA22BAB4CF7DD84B001A8,
+	SwitchToMap_ToggleGameObjects2_mBD9680AB58CEE0E491E04C374E5A50C6D70E609F,
+	SwitchToMap__ctor_m1122433F362B487AE2D9A752D8C410C26A28925B,
 	EarcutLibrary_Earcut_mF8F52D10F8841E41D70DB59E806A883A80E5784D,
 	EarcutLibrary_earcutLinked_m3CAB8CFAE22BE2DCD45FB25758754779FAB4F0B4,
 	EarcutLibrary_isEarHashed_m0687C4B718688AB2EB65093809511924EE4C3ABC,

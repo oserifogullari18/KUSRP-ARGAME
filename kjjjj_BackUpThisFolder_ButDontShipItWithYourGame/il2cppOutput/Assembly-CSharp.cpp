@@ -696,8 +696,6 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472;
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
-// ObjectSwitcher
-struct ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF;
 // Mapbox.Unity.Utilities.OpenUrlOnButtonClick
 struct OpenUrlOnButtonClick_t8E80FF8E4018D370534FB8F768A9088A45344464;
 // UnityEngine.Events.PersistentCallGroup
@@ -784,6 +782,8 @@ struct StyleSearchAttribute_t93145595A411C7B9B2A19BD470DFB922662E92A8;
 struct SubLayerBehaviorModifiers_tCB7224C443930EE72676D791D997B086B1EB86AD;
 // Mapbox.Unity.SourceLayers.SubLayerModeling
 struct SubLayerModeling_t56D611321A92BC66E0A5EBE9FB5E04499BE7420D;
+// SwitchToMap
+struct SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896;
 // SQLite4Unity3d.TableAttribute
 struct TableAttribute_tC017BC787AD8FFE91E277918E16897BCBEE8A534;
 // SQLite4Unity3d.TableMapping
@@ -1117,14 +1117,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral05090A024EE047652C95DFB77AAF2AC69652D49D
 IL2CPP_EXTERN_C String_t* _stringLiteral052B8192F203221284896287AF5F461D63D5A462;
 IL2CPP_EXTERN_C String_t* _stringLiteral052C17E9D6BC1FE3DB31F3277AED6D12A2C6BDAC;
 IL2CPP_EXTERN_C String_t* _stringLiteral06392FA0936F3EC2F7D0343AEEFDAD60EC014C59;
-IL2CPP_EXTERN_C String_t* _stringLiteral079998E3393B6BDC1FAFFA63A54F724488AE5306;
 IL2CPP_EXTERN_C String_t* _stringLiteral087915F54405AD1B7F0E6ADFE8D41FB99BBC5929;
 IL2CPP_EXTERN_C String_t* _stringLiteral09684B67A5909FD48E1F14A8AF8DDD483C620B10;
 IL2CPP_EXTERN_C String_t* _stringLiteral09C54A03E0D76E1085070534A6684B27712F37AE;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B1AA9B29EF545DBB7671B2694E3D4F830F07300;
 IL2CPP_EXTERN_C String_t* _stringLiteral0BB9D44B2658EA3DC9C3A72DCDB12CFE73056974;
 IL2CPP_EXTERN_C String_t* _stringLiteral0BDDAECAED3C99A03FBECC88081D003DDAEC50C1;
-IL2CPP_EXTERN_C String_t* _stringLiteral0D52B98D58DD8EF50D05DDB2F9E6A291EFC7F82A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D6876D50A1D87B54E0352DBDF73F90DE9E3C7E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral1168E92C164109D6220480DEDA987085B2A21155;
 IL2CPP_EXTERN_C String_t* _stringLiteral11D7334E93FB3A9A49A6EFA34FD0143900577CDA;
@@ -5979,15 +5977,6 @@ struct MeshGenerationBase_t5E06C9E93531AF82F7373701142501DCCA790B44  : public Me
 	HashSet_1_t2CBF6B718D0EBD490E924F4EA31C97B3A5C70570* ___U3CCriteriaU3Ek__BackingField_6;
 };
 
-// ObjectSwitcher
-struct ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.String ObjectSwitcher::gameTag
-	String_t* ___gameTag_4;
-	// System.String ObjectSwitcher::mapTag
-	String_t* ___mapTag_5;
-};
-
 // Mapbox.Unity.Utilities.OpenUrlOnButtonClick
 struct OpenUrlOnButtonClick_t8E80FF8E4018D370534FB8F768A9088A45344464  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6031,6 +6020,19 @@ struct Shoot_t08C24BBE00220196C8CC9C91F8C45B52885C680A  : public MonoBehaviour_t
 {
 	// UnityEngine.GameObject Shoot::arCamera
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___arCamera_4;
+};
+
+// SwitchToMap
+struct SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject[] SwitchToMap::objectsToToggle
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___objectsToToggle_4;
+	// UnityEngine.GameObject[] SwitchToMap::objectsToToggle2
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___objectsToToggle2_5;
+	// System.Boolean SwitchToMap::areObjectsEnabled
+	bool ___areObjectsEnabled_6;
+	// System.Boolean SwitchToMap::areObjectsEnabled2
+	bool ___areObjectsEnabled2_7;
 };
 
 // Mapbox.Unity.Utilities.TelemetryConfigurationButton
@@ -7784,8 +7786,6 @@ inline Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* GameObject_GetComponent
 {
 	return ((  Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
-// UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* GameObject_FindGameObjectsWithTag_m63AB9863553265F03EDE4C11AEA98AF591CAEA1E (String_t* ___tag0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Int32 System.Math::Max(System.Int32,System.Int32)
@@ -12901,83 +12901,85 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shoot__ctor_m9CC0333342223937F83B34DB410
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void ObjectSwitcher::SwitchToGameObjects()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSwitcher_SwitchToGameObjects_m7E564CF94CA90046BD53E37FBBF497AC78989A32 (ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF* __this, const RuntimeMethod* method) 
+// System.Void SwitchToMap::ToggleGameObjects()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchToMap_ToggleGameObjects_m4F28F68B628B0AAFD26BA22BAB4CF7DD84B001A8 (SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896* __this, const RuntimeMethod* method) 
 {
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		// GameObject[] mapObjects = GameObject.FindGameObjectsWithTag(mapTag);
-		String_t* L_0 = __this->___mapTag_5;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1;
-		L_1 = GameObject_FindGameObjectsWithTag_m63AB9863553265F03EDE4C11AEA98AF591CAEA1E(L_0, NULL);
-		// foreach (GameObject obj in mapObjects)
+		// areObjectsEnabled = !areObjectsEnabled;
+		bool L_0 = __this->___areObjectsEnabled_6;
+		__this->___areObjectsEnabled_6 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		// foreach (GameObject obj in objectsToToggle)
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___objectsToToggle_4;
 		V_0 = L_1;
 		V_1 = 0;
-		goto IL_001d;
+		goto IL_002c;
 	}
 
-IL_0010:
+IL_001a:
 	{
-		// foreach (GameObject obj in mapObjects)
+		// foreach (GameObject obj in objectsToToggle)
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = V_0;
 		int32_t L_3 = V_1;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		// obj.SetActive(false);
+		// obj.SetActive(areObjectsEnabled);
+		bool L_6 = __this->___areObjectsEnabled_6;
 		NullCheck(L_5);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		int32_t L_6 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, L_6, NULL);
+		int32_t L_7 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
-IL_001d:
+IL_002c:
 	{
-		// foreach (GameObject obj in mapObjects)
-		int32_t L_7 = V_1;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = V_0;
-		NullCheck(L_8);
-		if ((((int32_t)L_7) < ((int32_t)((int32_t)(((RuntimeArray*)L_8)->max_length)))))
+		// foreach (GameObject obj in objectsToToggle)
+		int32_t L_8 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = V_0;
+		NullCheck(L_9);
+		if ((((int32_t)L_8) < ((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length)))))
 		{
-			goto IL_0010;
+			goto IL_001a;
 		}
 	}
 	{
-		// GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(gameTag);
-		String_t* L_9 = __this->___gameTag_4;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10;
-		L_10 = GameObject_FindGameObjectsWithTag_m63AB9863553265F03EDE4C11AEA98AF591CAEA1E(L_9, NULL);
-		// foreach (GameObject obj in gameObjects)
-		V_0 = L_10;
+		// areObjectsEnabled2 = !areObjectsEnabled2;
+		bool L_10 = __this->___areObjectsEnabled2_7;
+		__this->___areObjectsEnabled2_7 = (bool)((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
+		// foreach (GameObject obj in objectsToToggle2)
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_11 = __this->___objectsToToggle2_5;
+		V_0 = L_11;
 		V_1 = 0;
-		goto IL_0040;
+		goto IL_005e;
 	}
 
-IL_0033:
+IL_004c:
 	{
-		// foreach (GameObject obj in gameObjects)
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_11 = V_0;
-		int32_t L_12 = V_1;
-		NullCheck(L_11);
-		int32_t L_13 = L_12;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
-		// obj.SetActive(true);
-		NullCheck(L_14);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)1, NULL);
-		int32_t L_15 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_15, 1));
+		// foreach (GameObject obj in objectsToToggle2)
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_12 = V_0;
+		int32_t L_13 = V_1;
+		NullCheck(L_12);
+		int32_t L_14 = L_13;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
+		// obj.SetActive(areObjectsEnabled2);
+		bool L_16 = __this->___areObjectsEnabled2_7;
+		NullCheck(L_15);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, L_16, NULL);
+		int32_t L_17 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_17, 1));
 	}
 
-IL_0040:
+IL_005e:
 	{
-		// foreach (GameObject obj in gameObjects)
-		int32_t L_16 = V_1;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_17 = V_0;
-		NullCheck(L_17);
-		if ((((int32_t)L_16) < ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))))
+		// foreach (GameObject obj in objectsToToggle2)
+		int32_t L_18 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_19 = V_0;
+		NullCheck(L_19);
+		if ((((int32_t)L_18) < ((int32_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))
 		{
-			goto IL_0033;
+			goto IL_004c;
 		}
 	}
 	{
@@ -12985,83 +12987,47 @@ IL_0040:
 		return;
 	}
 }
-// System.Void ObjectSwitcher::SwitchToMapObjects()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSwitcher_SwitchToMapObjects_mD2A8ECD22ACAE1874B74AE81D6CB1C5AACDD14DB (ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF* __this, const RuntimeMethod* method) 
+// System.Void SwitchToMap::ToggleGameObjects2()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchToMap_ToggleGameObjects2_mBD9680AB58CEE0E491E04C374E5A50C6D70E609F (SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896* __this, const RuntimeMethod* method) 
 {
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		// GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(gameTag);
-		String_t* L_0 = __this->___gameTag_4;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1;
-		L_1 = GameObject_FindGameObjectsWithTag_m63AB9863553265F03EDE4C11AEA98AF591CAEA1E(L_0, NULL);
-		// foreach (GameObject obj in gameObjects)
+		// areObjectsEnabled2 = !areObjectsEnabled2;
+		bool L_0 = __this->___areObjectsEnabled2_7;
+		__this->___areObjectsEnabled2_7 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		// foreach (GameObject obj in objectsToToggle2)
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___objectsToToggle2_5;
 		V_0 = L_1;
 		V_1 = 0;
-		goto IL_001d;
+		goto IL_002c;
 	}
 
-IL_0010:
+IL_001a:
 	{
-		// foreach (GameObject obj in gameObjects)
+		// foreach (GameObject obj in objectsToToggle2)
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = V_0;
 		int32_t L_3 = V_1;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		// obj.SetActive(false);
+		// obj.SetActive(areObjectsEnabled2);
+		bool L_6 = __this->___areObjectsEnabled2_7;
 		NullCheck(L_5);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		int32_t L_6 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
-	}
-
-IL_001d:
-	{
-		// foreach (GameObject obj in gameObjects)
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, L_6, NULL);
 		int32_t L_7 = V_1;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = V_0;
-		NullCheck(L_8);
-		if ((((int32_t)L_7) < ((int32_t)((int32_t)(((RuntimeArray*)L_8)->max_length)))))
-		{
-			goto IL_0010;
-		}
-	}
-	{
-		// GameObject[] mapObjects = GameObject.FindGameObjectsWithTag(mapTag);
-		String_t* L_9 = __this->___mapTag_5;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10;
-		L_10 = GameObject_FindGameObjectsWithTag_m63AB9863553265F03EDE4C11AEA98AF591CAEA1E(L_9, NULL);
-		// foreach (GameObject obj in mapObjects)
-		V_0 = L_10;
-		V_1 = 0;
-		goto IL_0040;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
-IL_0033:
+IL_002c:
 	{
-		// foreach (GameObject obj in mapObjects)
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_11 = V_0;
-		int32_t L_12 = V_1;
-		NullCheck(L_11);
-		int32_t L_13 = L_12;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
-		// obj.SetActive(true);
-		NullCheck(L_14);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)1, NULL);
-		int32_t L_15 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_15, 1));
-	}
-
-IL_0040:
-	{
-		// foreach (GameObject obj in mapObjects)
-		int32_t L_16 = V_1;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_17 = V_0;
-		NullCheck(L_17);
-		if ((((int32_t)L_16) < ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))))
+		// foreach (GameObject obj in objectsToToggle2)
+		int32_t L_8 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = V_0;
+		NullCheck(L_9);
+		if ((((int32_t)L_8) < ((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length)))))
 		{
-			goto IL_0033;
+			goto IL_001a;
 		}
 	}
 	{
@@ -13069,23 +13035,12 @@ IL_0040:
 		return;
 	}
 }
-// System.Void ObjectSwitcher::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSwitcher__ctor_m2AD45410FC79842EE85434A9C4BA1AEA1CCB9AD5 (ObjectSwitcher_t859485A5EC5063C9C918D1A4691CB61CAEA150DF* __this, const RuntimeMethod* method) 
+// System.Void SwitchToMap::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchToMap__ctor_m1122433F362B487AE2D9A752D8C410C26A28925B (SwitchToMap_tEAE6496620001BCA8D8CF4323AA7523FD2AFA896* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral079998E3393B6BDC1FAFFA63A54F724488AE5306);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0D52B98D58DD8EF50D05DDB2F9E6A291EFC7F82A);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// public string gameTag = "Game";
-		__this->___gameTag_4 = _stringLiteral079998E3393B6BDC1FAFFA63A54F724488AE5306;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameTag_4), (void*)_stringLiteral079998E3393B6BDC1FAFFA63A54F724488AE5306);
-		// public string mapTag = "map";
-		__this->___mapTag_5 = _stringLiteral0D52B98D58DD8EF50D05DDB2F9E6A291EFC7F82A;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___mapTag_5), (void*)_stringLiteral0D52B98D58DD8EF50D05DDB2F9E6A291EFC7F82A);
+		// private bool areObjectsEnabled = true;
+		__this->___areObjectsEnabled_6 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
