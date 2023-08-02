@@ -7,8 +7,7 @@ public class AIEnemy : MonoBehaviour
 
     public Transform player;
 
-    public LayerMask whatIsGround,
-        whatIsPlayer;
+    public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
 
@@ -23,12 +22,8 @@ public class AIEnemy : MonoBehaviour
     public GameObject projectile;
 
     //States
-    public float sightRange,
-        attackRange;
-    public bool playerInSightRange,
-        playerInAttackRange;
-
-    public Player Player;
+    public float sightRange, attackRange;
+    public bool playerInSightRange, playerInAttackRange;
 
     private void Awake()
     {
@@ -42,18 +37,14 @@ public class AIEnemy : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange)
-            Patroling();
-        if (playerInSightRange && !playerInAttackRange)
-            ChasePlayer();
-        if (playerInAttackRange && playerInSightRange)
-            AttackPlayer();
+        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
     private void Patroling()
     {
-        if (!walkPointSet)
-            SearchWalkPoint();
+        if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
             agent.SetDestination(walkPoint);
@@ -64,18 +55,13 @@ public class AIEnemy : MonoBehaviour
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
     }
-
     private void SearchWalkPoint()
     {
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3(
-            transform.position.x + randomX,
-            transform.position.y,
-            transform.position.z + randomZ
-        );
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
@@ -92,19 +78,7 @@ public class AIEnemy : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-
-        if (!alreadyAttacked)
-        {
-            ///Attack code here
-            Player.TakeDamage(10);
-
-            ///End of attack code
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
     }
-
     private void ResetAttack()
     {
         alreadyAttacked = false;
@@ -114,10 +88,8 @@ public class AIEnemy : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0)
-            Invoke(nameof(DestroyEnemy), 0.5f);
+        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
-
     private void DestroyEnemy()
     {
         Destroy(gameObject);
