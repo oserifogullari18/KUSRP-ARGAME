@@ -12,6 +12,8 @@ public class AIEnemy : MonoBehaviour
 
     public float health;
 
+    public int Damage;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -95,7 +97,7 @@ public class AIEnemy : MonoBehaviour
         if (!alreadyAttacked)
         {
             ///Attack code here
-            Player.TakeDamage(10);
+            Player.TakeDamage(Damage);
 
             ///End of attack code
 
