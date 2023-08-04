@@ -4,9 +4,8 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: Ellen_Eyes_Mat
   m_Shader: {fileID: 4800000, guid: b8ffc11356b25423badb5ee91cd5fab6, type: 3}
   m_ShaderKeywords: _NORMALMAP _SELFOCCLUSION_ON
@@ -104,8 +103,8 @@ Material:
     m_Colors:
     - _Color: {r: 0.8602941, g: 0.8602941, b: 0.8602941, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EyeColor: {r: 0.4716981, g: 0.31316748, b: 0.26032394, a: 0}
-    - _InternalColor: {r: 0.8207547, g: 0.7974108, b: 0.7936543, a: 1}
-    - _ScleraColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EyeColor: {r: 0.23584908, g: 0.059835423, b: 0, a: 0}
+    - _InternalColor: {r: 0.6392157, g: 0.29803923, b: 0.24313727, a: 1}
+    - _ScleraColor: {r: 0.86666673, g: 0.7372549, b: 0.6901961, a: 1}
     - _ScoleraColor: {r: 0.875, g: 0.875, b: 0.875, a: 0}
     - _SpecColor: {r: 0.08088237, g: 0.08088237, b: 0.08088237, a: 1}

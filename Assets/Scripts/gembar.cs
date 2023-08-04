@@ -6,6 +6,7 @@ using TMPro;
 
 public class gembar : MonoBehaviour
 {
+    public Button targetButton;
     public static gembar Instance { get; private set; }
     public TMP_Text Gem_Text; // Reference to the UI Text element
 
@@ -28,7 +29,15 @@ public class gembar : MonoBehaviour
     {
         if (Gem_Text != null && collectedGems<=5)
         {
-            Gem_Text.SetText("Gems: " + collectedGems.ToString() + " / " + maxGems.ToString());
+            Gem_Text.SetText(collectedGems.ToString() + " / " + maxGems.ToString());
         }
+
+        if(collectedGems==5 && !targetButton.interactable){
+            targetButton.interactable = true;
+        }
+    }
+
+    public void EnableButton(){
+        targetButton.interactable = false;
     }
 }

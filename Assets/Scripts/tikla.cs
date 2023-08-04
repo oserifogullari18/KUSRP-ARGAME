@@ -16,6 +16,8 @@ public class tikla : MonoBehaviour
     void Start(){
         StarHitManager.Instance.StopStarHit();
         GemCollectedManager.Instance.HideGemCollected();
+        gembar.Instance.EnableButton();
+        gembar2.Instance.Enable2Button();
 
     }
 
@@ -38,19 +40,22 @@ public class tikla : MonoBehaviour
 
                if (Physics.Raycast(ray, out hit))
             {
-                    if(hit.collider.CompareTag("gem")){
                         if(touched){
                             touched=false;
                             numberOfGemsCollected++;
-                            gembar.Instance.UpdateGemCount(numberOfGemsCollected);
-                            //gemBar.UpdateGemCount(numberOfGemsCollected);
+                            if(hit.collider.CompareTag("diamond")){
+                                gembar.Instance.UpdateGemCount(numberOfGemsCollected);
+                            }
+                            if(hit.collider.CompareTag("diamond2")){
+                                gembar2.Instance.UpdateGem2Count(numberOfGemsCollected);
+                            }
+
                             Debug.Log(numberOfGemsCollected);
                         }
+                        
                         Destroy(hit.collider.gameObject);
-                        //starHit.transform.position = hit.point;
                         CollectGem(hit.point);
-                    }
-                }
+            }
             }
         }
     }

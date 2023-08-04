@@ -5,7 +5,7 @@ using UnityEngine;
 public class ARObjectRandomPlacer : MonoBehaviour
 {
     public GameObject prefabToPlace;
-    public int numberOfObjectsToPlace = 5;
+    public int numberOfObjectsToPlace;
     public int i=0;
     public float areaRadius = 10f;
     private List<Vector3> gemPositions = new List<Vector3>();
@@ -77,8 +77,15 @@ public class ARObjectRandomPlacer : MonoBehaviour
     void PlaceRandomObjects()
     {
 
+        if(prefabToPlace.CompareTag("gem")){
+            numberOfObjectsToPlace=5;
+        }
+        else if(prefabToPlace.CompareTag("horn")){
+            numberOfObjectsToPlace=3;
+        }
+
         while (i < numberOfObjectsToPlace)
-    {
+        {
         tooClose = false;
 
         float angle = Random.Range(0f, 360f); // Random angle in degrees
