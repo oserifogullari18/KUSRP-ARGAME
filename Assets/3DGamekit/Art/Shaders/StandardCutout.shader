@@ -64,8 +64,8 @@ Shader "Custom/StandardCutout" {
    			COMPUTE_EYEDEPTH(o.projectedPosition.z);
 		}
 
-		sampler2D_float _CameraDepthTexture;
-
+		UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
+		
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 
 
