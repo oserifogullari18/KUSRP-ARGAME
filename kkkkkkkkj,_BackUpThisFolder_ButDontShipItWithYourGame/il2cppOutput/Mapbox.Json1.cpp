@@ -2262,13 +2262,13 @@ struct KeyValuePair_2_tD46D4222B30034E9B54568C8CAF7963F75446E6D
 struct KeyedCollection_2_t94BC1B3AF340FCF06117C8A00F212D985604B5BE  : public Collection_1_t9889A2EC32228FC7C96280BAD6BECABF6EECF8C3
 {
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.ObjectModel.KeyedCollection`2::comparer
-	RuntimeObject* ___comparer_2;
+	RuntimeObject* ___comparer_1;
 	// System.Collections.Generic.Dictionary`2<TKey,TItem> System.Collections.ObjectModel.KeyedCollection`2::dict
-	Dictionary_2_tFB58F4B9D0F3C4C27FC7157C6843EB3248E8236F* ___dict_3;
+	Dictionary_2_tFB58F4B9D0F3C4C27FC7157C6843EB3248E8236F* ___dict_2;
 	// System.Int32 System.Collections.ObjectModel.KeyedCollection`2::keyCount
-	int32_t ___keyCount_4;
+	int32_t ___keyCount_3;
 	// System.Int32 System.Collections.ObjectModel.KeyedCollection`2::threshold
-	int32_t ___threshold_5;
+	int32_t ___threshold_4;
 };
 
 // System.Nullable`1<System.Boolean>

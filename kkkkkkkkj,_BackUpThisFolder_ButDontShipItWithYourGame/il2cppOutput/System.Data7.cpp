@@ -9778,7 +9778,7 @@ IL_002a:
 		String_t* L_12;
 		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(48 /* System.String System.Xml.XmlReader::ReadInnerXml() */, L_11);
 		NullCheck(L_10);
-		VirtualActionInvoker1< String_t* >::Invoke(17 /* System.Void System.IO.TextWriter::Write(System.String) */, L_10, L_12);
+		VirtualActionInvoker1< String_t* >::Invoke(16 /* System.Void System.IO.TextWriter::Write(System.String) */, L_10, L_12);
 		NullCheck(L_10);
 		VirtualActionInvoker0::Invoke(10 /* System.Void System.IO.TextWriter::Flush() */, L_10);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_13 = __this->____stream_6;
@@ -26191,7 +26191,7 @@ IL_0013:
 		RuntimeObject* L_9 = ___value1;
 		NullCheck(L_8);
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
 		if (!L_10)
 		{
 			goto IL_0042;

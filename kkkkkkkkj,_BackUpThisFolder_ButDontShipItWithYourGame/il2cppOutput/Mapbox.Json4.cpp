@@ -2081,13 +2081,13 @@ struct KeyValuePair_2_t2C6D5A75A43219089DEF6755578B9C5CA17C6C13
 struct KeyedCollection_2_t9C0AE0A5C8B5DF503E1EB56D4B266D869DF77D97  : public Collection_1_t403D1F6E1EDB7845820D1C394B1E3664DF463CBD
 {
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.ObjectModel.KeyedCollection`2::comparer
-	RuntimeObject* ___comparer_2;
+	RuntimeObject* ___comparer_1;
 	// System.Collections.Generic.Dictionary`2<TKey,TItem> System.Collections.ObjectModel.KeyedCollection`2::dict
-	Dictionary_2_t32A1A78D5B3C44640862519A494FEBB80FCA9AF1* ___dict_3;
+	Dictionary_2_t32A1A78D5B3C44640862519A494FEBB80FCA9AF1* ___dict_2;
 	// System.Int32 System.Collections.ObjectModel.KeyedCollection`2::keyCount
-	int32_t ___keyCount_4;
+	int32_t ___keyCount_3;
 	// System.Int32 System.Collections.ObjectModel.KeyedCollection`2::threshold
-	int32_t ___threshold_5;
+	int32_t ___threshold_4;
 };
 
 // System.Nullable`1<System.Boolean>
@@ -3440,9 +3440,9 @@ struct JsonProperty_tDA321A9A0B53EB21402057B759C3116545E2B6FB  : public RuntimeO
 struct JsonPropertyCollection_tE88A9A35FBD2C0A2E6DCEA50BC3FA5AE26C4CEF1  : public KeyedCollection_2_t9C0AE0A5C8B5DF503E1EB56D4B266D869DF77D97
 {
 	// System.Type Mapbox.Json.Serialization.JsonPropertyCollection::_type
-	Type_t* ____type_6;
+	Type_t* ____type_5;
 	// System.Collections.Generic.List`1<Mapbox.Json.Serialization.JsonProperty> Mapbox.Json.Serialization.JsonPropertyCollection::_list
-	List_1_tF0C25DFFECB95B69A37CD64BF18E237CCF225863* ____list_7;
+	List_1_tF0C25DFFECB95B69A37CD64BF18E237CCF225863* ____list_6;
 };
 
 // Mapbox.Json.JsonReader
@@ -37030,7 +37030,7 @@ IL_0015:
 		RuntimeObject* L_9 = __this->____annotations_4;
 		NullCheck(L_8);
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
 		V_4 = L_10;
 		bool L_11 = V_4;
 		if (!L_11)
@@ -37081,7 +37081,7 @@ IL_0073:
 		RuntimeObject* L_20 = V_7;
 		NullCheck(L_19);
 		bool L_21;
-		L_21 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_19, L_20);
+		L_21 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_19, L_20);
 		V_9 = L_21;
 		bool L_22 = V_9;
 		if (!L_22)
@@ -37223,7 +37223,7 @@ IL_0015:
 		RuntimeObject* L_9 = __this->____annotations_4;
 		NullCheck(L_8);
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
 		V_4 = L_10;
 		bool L_11 = V_4;
 		if (!L_11)
@@ -37274,7 +37274,7 @@ IL_007a:
 		RuntimeObject* L_19 = V_7;
 		NullCheck(L_18);
 		bool L_20;
-		L_20 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_18, L_19);
+		L_20 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_18, L_19);
 		V_9 = (bool)((((int32_t)L_20) == ((int32_t)0))? 1 : 0);
 		bool L_21 = V_9;
 		if (!L_21)

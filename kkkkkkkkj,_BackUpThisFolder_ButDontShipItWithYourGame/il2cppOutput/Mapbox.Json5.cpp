@@ -5962,7 +5962,7 @@ IL_00b5:
 		RuntimeObject* L_19 = __this->___U3CoU3E5__3_8;
 		NullCheck(L_18);
 		bool L_20;
-		L_20 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_18, L_19);
+		L_20 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_18, L_19);
 		V_5 = L_20;
 		bool L_21 = V_5;
 		if (!L_21)
@@ -6019,7 +6019,7 @@ IL_011f:
 		RuntimeObject* L_30 = L_29->____annotations_4;
 		NullCheck(L_28);
 		bool L_31;
-		L_31 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_28, L_30);
+		L_31 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_28, L_30);
 		V_8 = (bool)((((int32_t)L_31) == ((int32_t)0))? 1 : 0);
 		bool L_32 = V_8;
 		if (!L_32)
@@ -24050,7 +24050,7 @@ IL_008e:
 		Type_t* L_16 = V_2;
 		NullCheck(L_16);
 		Type_t* L_17;
-		L_17 = VirtualFuncInvoker0< Type_t* >::Invoke(119 /* System.Type System.Type::MakeArrayType() */, L_16);
+		L_17 = VirtualFuncInvoker0< Type_t* >::Invoke(117 /* System.Type System.Type::MakeArrayType() */, L_16);
 		V_3 = L_17;
 		goto IL_00ba;
 	}

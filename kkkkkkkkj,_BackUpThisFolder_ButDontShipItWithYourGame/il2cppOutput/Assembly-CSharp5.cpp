@@ -19386,7 +19386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationLogWriter__ctor_m01FEC9E89238EBD
 		String_t* L_17;
 		L_17 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral0B0FEB3147CE20EB2C90076367F895C59BCD14B3, L_16, NULL);
 		NullCheck(L_13);
-		VirtualActionInvoker1< String_t* >::Invoke(19 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_13, L_17);
+		VirtualActionInvoker1< String_t* >::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_13, L_17);
 		// }
 		return;
 	}
@@ -19753,7 +19753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationLogWriter_Write_mE1E0D485106AE99
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_86 = __this->____textWriter_4;
 		String_t* L_87 = V_1;
 		NullCheck(L_86);
-		VirtualActionInvoker1< String_t* >::Invoke(19 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_86, L_87);
+		VirtualActionInvoker1< String_t* >::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_86, L_87);
 		// _textWriter.Flush();
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_88 = __this->____textWriter_4;
 		NullCheck(L_88);
