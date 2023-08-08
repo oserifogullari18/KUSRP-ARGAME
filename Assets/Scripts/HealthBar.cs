@@ -30,7 +30,6 @@ public class HealthBar : MonoBehaviour
         slider.value -= damage;
         if (slider.value <= 0)
         {
-            a.SetActive(true);
         }
     }
 

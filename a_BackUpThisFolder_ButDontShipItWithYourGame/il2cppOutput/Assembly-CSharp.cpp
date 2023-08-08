@@ -955,8 +955,12 @@ struct gemmanager_tF5F356C868F63B64A306EB7F75C02CE3D9D4D49B;
 struct helloWorld_tC6B155FD620F0191EDB19B36AC56C2CBAE5D8995;
 // hornbar
 struct hornbar_tADEED9898E8668AD98EA5D22CC6CE96F3B1A351B;
+// restart
+struct restart_t18B51E76555CD81C0384F40BA3F2215391778965;
 // tikla
 struct tikla_t0C0687619164336ECFBE3525DA01C58303A45A5C;
+// trigger
+struct trigger_t1513893177289AEEC05454F15DAFD60EEA562240;
 // UnityEngine.AudioClip/PCMReaderCallback
 struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
 // UnityEngine.AudioClip/PCMSetPositionCallback
@@ -7206,6 +7210,8 @@ struct HealthBar_t16FCB4D24034E750B0152144EC1371F4494A95FA  : public MonoBehavio
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___fill_6;
 	// UnityEngine.Transform HealthBar::cam
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___cam_7;
+	// UnityEngine.GameObject HealthBar::a
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___a_8;
 };
 
 // HornCollectedManager
@@ -7752,6 +7758,11 @@ struct hornbar_tADEED9898E8668AD98EA5D22CC6CE96F3B1A351B_StaticFields
 	hornbar_tADEED9898E8668AD98EA5D22CC6CE96F3B1A351B* ___U3CInstanceU3Ek__BackingField_5;
 };
 
+// restart
+struct restart_t18B51E76555CD81C0384F40BA3F2215391778965  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // tikla
 struct tikla_t0C0687619164336ECFBE3525DA01C58303A45A5C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -7763,6 +7774,17 @@ struct tikla_t0C0687619164336ECFBE3525DA01C58303A45A5C  : public MonoBehaviour_t
 	float ___collectionTime_6;
 	// System.Single tikla::effectTime
 	float ___effectTime_7;
+};
+
+// trigger
+struct trigger_t1513893177289AEEC05454F15DAFD60EEA562240  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject trigger::screen
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___screen_4;
+	// UnityEngine.GameObject trigger::healthbar
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___healthbar_5;
+	// HealthBar trigger::healthbar1
+	HealthBar_t16FCB4D24034E750B0152144EC1371F4494A95FA* ___healthbar1_6;
 };
 
 // UnityEngine.XR.ARFoundation.ARTrackableManager`5<UnityEngine.XR.ARSubsystems.XRAnchorSubsystem,UnityEngine.XR.ARSubsystems.XRAnchorSubsystemDescriptor,UnityEngine.XR.ARSubsystems.XRAnchorSubsystem/Provider,UnityEngine.XR.ARSubsystems.XRAnchor,UnityEngine.XR.ARFoundation.ARAnchor>
@@ -11558,6 +11580,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR gembar2_t18129D42168B7CC042CD663B
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void gembar2_set_Instance_m303B7D8C13B63E8D2214BDE5C08AA7EF6C5432E1_inline (gembar2_t18129D42168B7CC042CD663B0B732F7FFB9D3383* ___value0, const RuntimeMethod* method) ;
 // System.Void gembar::UpdateGemCount(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gembar_UpdateGemCount_mBE365185624345FFEE744D7DDE60E4019967CB67 (gembar_t50EB5C1D6CE4F80362F8EF8D24A986DCB4DFAAE6* __this, int32_t ___collectedGems0, const RuntimeMethod* method) ;
+// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetActiveScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetActiveScene_m2DB2A1ACB84805968A4B6396BFDFB92C0AF32BCE (const RuntimeMethod* method) ;
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 // System.Void StarHitManager::StopStarHit()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StarHitManager_StopStarHit_m1ECEF0F40477BE1742983E5475758A7D8A8E2F00 (StarHitManager_t7B4CAFCF67F212EF937A5AEA9D832EA6F1115C66* __this, const RuntimeMethod* method) ;
 // System.Void GemCollectedManager::HideGemCollected()
@@ -28533,6 +28559,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void gemmanager__ctor_mAF8AAC77FB86B39DE13BD5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void restart::restart1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void restart_restart1_m0B0DD7E3EBD7197D8305F24B32FFE180A051569C (restart_t18B51E76555CD81C0384F40BA3F2215391778965* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
+		L_0 = SceneManager_GetActiveScene_m2DB2A1ACB84805968A4B6396BFDFB92C0AF32BCE(NULL);
+		V_0 = L_0;
+		String_t* L_1;
+		L_1 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_0), NULL);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void restart::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void restart__ctor_m8D2882AB2F7C7265754F56B0343095600DD66AF5 (restart_t18B51E76555CD81C0384F40BA3F2215391778965* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void tikla::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void tikla_Start_mBE7009C112834E5BE1BF0525055FB48A17E8E131 (tikla_t0C0687619164336ECFBE3525DA01C58303A45A5C* __this, const RuntimeMethod* method) 
 {
@@ -28790,6 +28856,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void tikla__ctor_m73D849AB15231A4726E661EB1B0
 		__this->___collectionTime_6 = (1.0f);
 		// public float effectTime = 0.8f;
 		__this->___effectTime_7 = (0.800000012f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void trigger::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void trigger_Update_mB139430EF7366477F898399A6C321F219D0B64C6 (trigger_t1513893177289AEEC05454F15DAFD60EEA562240* __this, const RuntimeMethod* method) 
+{
+	{
+		// if(healthbar1.slider.value<=0){
+		HealthBar_t16FCB4D24034E750B0152144EC1371F4494A95FA* L_0 = __this->___healthbar1_6;
+		NullCheck(L_0);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_1 = L_0->___slider_4;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = VirtualFuncInvoker0< float >::Invoke(46 /* System.Single UnityEngine.UI.Slider::get_value() */, L_1);
+		if ((!(((float)L_2) <= ((float)(0.0f)))))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		// screen.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___screen_4;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+	}
+
+IL_0023:
+	{
+		// }
+		return;
+	}
+}
+// System.Void trigger::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void trigger__ctor_m8541964BCD27997F5B236A76CC8A59598E251F94 (trigger_t1513893177289AEEC05454F15DAFD60EEA562240* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
