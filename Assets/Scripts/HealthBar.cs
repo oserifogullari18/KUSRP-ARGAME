@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 	public Transform cam;
-
+    public GameObject a;
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
@@ -30,7 +30,7 @@ public class HealthBar : MonoBehaviour
         slider.value -= damage;
         if (slider.value <= 0)
         {
-            
+            a.SetActive(true);
         }
     }
 
